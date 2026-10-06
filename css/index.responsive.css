@@ -243,6 +243,9 @@
   #Contact form .content {
     width: 80%;
   }
+  #Contact form .card .item {
+    width: 100%;
+  }
   #Contact form .content .card:not(:last-child) {
     width: 100%;
   }
@@ -329,7 +332,7 @@
   }
   #Contact form .card .item input {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   #Contact form .card .item textarea {
     height: 200px;
@@ -451,9 +454,12 @@
     height: 124px;
   }
   #Contact form .content {
-    width: 90%;
+    width: 80%;
   }
-  #Contact form .card .item input {
+  #Contact form .content .card:not(:last-child) {
+    width: 30%;
+  }
+  #Contact form .card .item #Contact form .card .item input {
     margin-bottom: 40px;
   }
   #Contact form .card .item textarea {
@@ -461,8 +467,8 @@
   }
   #Contact .button .item button {
     position: absolute;
-    top: 20px;
-    left: 80px;
+    top: 10px;
+    left: 85px;
   }
   #details .content .times .item {
     display: flex;
@@ -561,8 +567,8 @@
   }
   #Contact .button .item button {
     position: absolute;
-    top: 20px;
-    left: 60px;
+    top: 10px;
+    left: 55px;
   }
   #details .container {
     display: flex;
