@@ -99,8 +99,11 @@ header .scrolling {
   position: fixed;
   bottom: 15px;
   right: 15px;
+  background-color: transparent;
 }
-
+header .scrolling a img {
+  background-color: transparent;
+}
 #About .container {
   display: flex;
   justify-content: space-between;
@@ -378,46 +381,50 @@ header .scrolling {
   align-items: center;
 }
 #Contact form .content {
-  width: 75%;
+  width: 60%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
 }
-#Contact form .content .card .item:not(:last-child) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#Contact form .content .card {
   width: 100%;
-  margin-bottom: 15px;
+  margin: auto;
+}
+#Contact form .content .card:not(:last-child) {
+  width: 30%;
+}
+#Contact form .content .card:nth-of-type(2) {
+  margin: 0px 10px;
 }
 #Contact form .card .item input,
 #Contact form .card .item textarea {
   width: 100%;
-  border: none;
-  border-bottom: 1px solid #e55556;
+  padding: 10px;
   border-radius: 0;
+  border: none;
   transition-duration: 0.5s;
+}
+#Contact form .card .item input {
+  border-bottom: 1px solid #e55556;
+  margin-bottom: 40px;
 }
 #Contact form .card .item input:focus-visible {
   outline: none;
   border-bottom: none;
   box-shadow: rgba(255, 8, 173, 0.5) 0px 3px 8px;
 }
-#Contact form .card .item input {
-  width: 262.98px;
-  height: 37px;
-  margin-bottom: 40px;
-}
 #Contact form .card .item input .input::placeholder {
   font-size: 20px;
 }
 #Contact form .card .item textarea {
   display: flex;
+  border-bottom: 1px solid #e55556;
   flex-direction: column;
   resize: none;
-  width: 837px;
-  height: 200px;
+  height: 170px;
   transition-duration: 0.5s;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 #Contact form .card .item textarea:focus-visible {
   outline: none;
@@ -438,8 +445,9 @@ header .scrolling {
   font-size: 15px;
   position: absolute;
   top: 20px;
-  left: 260px;
+  left: 270px;
   transition-duration: 0.25s;
+  cursor: pointer;
 }
 #Contact .button .item button:hover {
   background-color: #e55556;

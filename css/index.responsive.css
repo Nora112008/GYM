@@ -148,23 +148,23 @@
   #Contact .content .box .item a {
     line-height: 1.5;
   }
-  #Contact form .content .card .item {
+  #Contact form .content .card:not(:last-child) {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   #Contact form .card .item input {
+    width: 100%;
     margin-bottom: 20px;
   }
   #Contact form .card .item textarea {
-    width: 250px;
     height: 200px;
   }
   #Contact .button .item button {
     position: absolute;
     top: 20px;
-    left: 50px;
+    left: 80px;
   }
   #details .container {
     display: flex;
@@ -240,13 +240,17 @@
     width: 80%;
     margin: 20px 10px;
   }
+  #Contact form .content {
+    width: 80%;
+  }
+  #Contact form .content .card:not(:last-child) {
+    width: 100%;
+  }
   #Contact form .card .item input {
-    width: 330px;
-    height: 37px;
+    width: 100%;
     margin-bottom: 40px;
   }
   #Contact form .card .item textarea {
-    width: 319.5px;
     height: 200px;
   }
   #Contact .button .item button {
@@ -317,13 +321,17 @@
     font-size: 20px;
     margin-bottom: 40px;
   }
+  #Contact form .content {
+    width: 60%;
+  }
+  #Contact form .content .card:not(:last-child) {
+    width: 100%;
+  }
   #Contact form .card .item input {
-    width: 400px;
-    height: 37px;
+    width: 100%;
     margin-bottom: 40px;
   }
   #Contact form .card .item textarea {
-    width: 400px;
     height: 200px;
   }
   #Contact .button .item button {
@@ -446,12 +454,9 @@
     width: 90%;
   }
   #Contact form .card .item input {
-    width: 220px;
-    height: 37px;
     margin-bottom: 40px;
   }
   #Contact form .card .item textarea {
-    width: 696px;
     height: 200px;
   }
   #Contact .button .item button {
@@ -514,6 +519,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  #About .container .part2 .image img {
+    max-width: 100%;
+  }
   #Service .container .title h2 {
     font-size: 35px;
   }
@@ -546,12 +554,9 @@
     width: 90%;
   }
   #Contact form .card .item input {
-    width: 295.98px;
-    height: 37px;
     margin-bottom: 40px;
   }
   #Contact form .card .item textarea {
-    width: 934px;
     height: 200px;
   }
   #Contact .button .item button {
